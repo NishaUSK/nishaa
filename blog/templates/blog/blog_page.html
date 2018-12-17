@@ -12,7 +12,7 @@
 
     {{ page.body|richtext }}
 
-    {% for item in page.picss_images.all %}
+    {% for item in page.gallery.all %}
         <div style="float: left; margin: 10px">
             {% image item.image fill-320x240 %}
             <p>{{ item.caption }}</p>
